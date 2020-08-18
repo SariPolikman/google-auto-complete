@@ -1,45 +1,37 @@
-# Project Title
+# auto complete
 
-Simple overview of use/purpose.
+* This is a program that offers the searcher in the file tree,
+* K the "best" suggestions (predetermined score) to complete the search key according to the data in the files,
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+* For each such proposal we will provide the following data: the source of the "path" of the original sentence,
+* the sentence itself, the location of the key in relation to the sentence, 
+* and the score determined in relation to its level of suitability.
+* The program supports the correction of one typo: Add, replace and skip a character - for which a reduced score will be given
 
 ## Getting Started
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* "pip install dataclasses" 
+
+### Preparation stage
+
+* run "init_search_data.py" (  )
+
+* To run on your files update the line
+```
+path = 'your_path'
+```
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* run "online.py" ()
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
+* Once the user types in characters and presses Enter the system displays the best K completions
+* After viewing the completions the system allows the user to continue typing from where he stopped
+* If the user types "#" it means that the user has finished typing for this sentence and can enter a new search
 ## Version History
 
 * 0.2
@@ -47,16 +39,3 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
     * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
